@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen a Pantalla Completa</title>
+    <style>
+        /* Estilos generales para asegurar que la imagen ocupe toda la pantalla */
+        body, html {
+            background-color: #000; /* Fondo negro */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita el scroll si la imagen es m芍s grande que la pantalla */
+            height: 100%;
+            width: 100%;
+        }
+        .image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; /* 100% del ancho de la ventana de visualizaci車n */
+            height: 100vh; /* 100% de la altura de la ventana de visualizaci車n */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fullscreen-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Asegura que la imagen se ajuste sin distorsi車n */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://i.postimg.cc/7Lsq4BFR/maxresdefault.jpg" alt="Imagen de Pantalla Completa" class="fullscreen-image">
+    </div>
+</body>
+</html>
